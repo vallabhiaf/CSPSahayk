@@ -1,0 +1,16 @@
+/* Enter your custom styles here */
+.sapUiBlockLayoutCell.headerInfoWhatsNew{
+  color: #fff;
+  background-image: url(../images/Wallpaper2.png);
+  background-size: 100% auto;
+  background-position: 0 70%;
+}
+.sapUiBlockLayoutCell.headerInfoDoc{
+  color: #fff;
+  background-image: url(../images/nature-with-sun.jpg);
+  background-size: 100% auto;
+  background-position: 0 40%;
+}
+.feedTitle.sapMLnk{
+  color: #fff;
+}

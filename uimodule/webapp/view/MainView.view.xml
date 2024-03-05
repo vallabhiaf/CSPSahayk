@@ -1,0 +1,180 @@
+<mvc:View controllerName="com.myorg.recommendationApp.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="SAP Customer Success Partner Sahayak Platform">
+<!--      <customHeader>-->
+<!--        <Bar>-->
+<!--&lt;!&ndash;          <contentLeft>&ndash;&gt;-->
+<!--&lt;!&ndash;          <Icon src="sap-icon://sap-ui5" size="2rem" />&ndash;&gt;-->
+<!--&lt;!&ndash;          </contentLeft>&ndash;&gt;-->
+<!--          <contentMiddle>-->
+<!--            <Title text="SAP Consultant Sahayak Platform" textAlign="Center" />-->
+<!--          </contentMiddle>-->
+<!--        </Bar>-->
+<!--      </customHeader>-->
+      <headerContent>
+        <Button text="Login as SME" tooltip="Share" press="onLoginAsSMEPageNavigate" />
+      </headerContent>
+      <l:BlockLayout>
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell titleAlignment="Left" class="headerInfoWhatsNew">
+            <l:customData>
+              <core:CustomData key="page5" value="" writeToDom="true" />
+            </l:customData>
+            <Text text="What's New" tooltip="Learn about the latest enhancements and updates in SAP Customer Sahayak Platform"/>
+            <l:titleLink>
+              <Link text="Hello there!" target="_blank" tooltip="Learn about the latest enhancements and updates in SAP Customer Sahayak Platform" class="feedTitle" press="onPressFeed"/>
+            </l:titleLink>
+          </l:BlockLayoutCell>
+<!--          <l:BlockLayoutCell titleAlignment="Left" class="headerInfoDoc">-->
+<!--            <l:customData>-->
+<!--              <core:CustomData key="page5" value="" writeToDom="true" />-->
+<!--            </l:customData>-->
+<!--            <Text text="What's New" tooltip="Learn about the latest enhancements and updates in SAP Customer Sahayak Platform"/>-->
+<!--            <l:titleLink>-->
+<!--              <Link text="What's New" target="_blank" tooltip="Learn about the latest enhancements and updates in SAP Customer Sahayak Platform" class="feedTitle" href="{i18n>whatsNewLink}" press="onPressFeed"/>-->
+<!--            </l:titleLink>-->
+<!--          </l:BlockLayoutCell>-->
+        </l:BlockLayoutRow>
+      </l:BlockLayout>
+        <content>
+          <l:HorizontalLayout>
+            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+              <GenericTile
+                backgroundImage="/images/Dabur1.png"
+                frameType="TwoByOne" press="pressOnTileOne">
+                <TileContent footer="Check it now!">
+                  <NewsContent
+                    contentText="Dabur bringing health and well-being to India"
+                    subheader="SAP Partner/customer success story" />
+                </TileContent>
+              </GenericTile>
+              <GenericTile
+                backgroundImage="images/Dabur2.png"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent footer="Check it now!">
+                  <NewsContent
+                    contentText="They adopted SAP BTP and Ariba services"/>
+                </TileContent>
+              </GenericTile>
+            </SlideTile>
+            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+              <GenericTile
+                size="L"
+                backgroundImage="/images/image8.png"
+                frameType="TwoByOne" press="pressOnTileOne">
+                <TileContent footer="Check it now!">
+                  <NewsContent
+                    size="XS"
+                    contentText="Thermax : Delivering consistent employee experience across all locations"
+                    subheader="SAP Partner/customer success story" />
+                </TileContent>
+              </GenericTile>
+              <GenericTile
+                backgroundImage="images/image6.png"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent footer="Check it now!">
+                  <NewsContent
+                    contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe"
+                     />
+                </TileContent>
+              </GenericTile>
+            </SlideTile>
+            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+              <GenericTile
+                backgroundImage="/images/image5.png"
+                frameType="TwoByOne" press="pressOnTileOne">
+                <TileContent footer="Check it now!">
+                  <NewsContent
+                    contentText="Moris Company is a leading manufacturer of consumer goods"
+                     />
+                </TileContent>
+              </GenericTile>
+              <GenericTile
+                backgroundImage="images/image7.png"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent footer="Check it now!">
+                  <NewsContent
+                    contentText="To streamline and optimize its business operations, reduce costs, and improve customer satisfaction"
+                     />
+                </TileContent>
+              </GenericTile>
+            </SlideTile>
+            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+              <GenericTile
+                backgroundImage="/images/image9.png"
+                frameType="TwoByOne" press="pressOnTileOne" width="100%" height="100%" >
+                <TileContent footer="check it now!">
+                  <NewsContent
+                    contentText="M+ Industry : To support the digitization of its procurement processes."
+                     />
+                </TileContent>
+              </GenericTile>
+              <GenericTile
+                backgroundImage="images/image8.png"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent footer="check it now">
+                  <NewsContent
+                    contentText="They choose to use SAP Ariba solutions and services."
+                     />
+                </TileContent>
+              </GenericTile>
+            </SlideTile>
+            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+              <GenericTile
+                backgroundImage="/images/image8.png"
+                frameType="TwoByOne" press="pressOnTileOne" width="100%" height="100%" >
+                <TileContent footer="check it now!">
+                  <NewsContent
+                    contentText="PLDT Inc. implemented SAP solutions to transform finance."
+                  />
+                </TileContent>
+              </GenericTile>
+              <GenericTile
+                backgroundImage="images/image9.png"
+                frameType="TwoByOne" press="pressOnTileTwo">
+                <TileContent footer="check it now">
+                  <NewsContent
+                    contentText="They choose to use SAP Successfactor solutions , SAP Business Network ,etc."
+                  />
+                </TileContent>
+              </GenericTile>
+            </SlideTile>
+          </l:HorizontalLayout>
+       <l:VerticalLayout class="sapUiContentPadding" width="100%">
+		<Label text="Enter Customer use case" labelFor="input-a" />
+		<Input id="input-a" required="true" placeholder="Example : BSP is steel manufacturing industry and facing issue with human resource management.." />
+         <HBox>
+         <Button id="buttonGenerate" text="Evaluate" press="onPressGeneration"/>
+<!--         <Button id="buttonCostEstimation" text="Pricing Estimation" press="onPressCostGeneration"/>-->
+         </HBox>
+
+		<Label
+			text="Architecture:"
+			labelFor="input-b"
+			design="Bold" />
+<!--         <l:HorizontalLayout>-->
+<!--           <HBox>-->
+           <TextArea id="input-b" width="100%" growing="true"/>
+<!--           <TextArea id="HLDTextArea" width="100%" growing="true"/>-->
+<!--           </HBox>-->
+<!--         </l:HorizontalLayout>-->
+
+         <Label
+           text="High Level Diagram and Cost Estimation:"
+           labelFor="input-b"
+           design="Bold" />
+         <Button text="Generate Diagram" press="getHLD"/>
+         <Button text="Get Owner details and Price Estimation"  press="getOwner"/>
+         <TextArea id="input-HLD" width="100%" growing="true"/>
+         <HBox>
+           <Text text="For more information on SAP BTP services ;"/>
+           <Link
+             text="click here"
+             target="_blank"
+             href="https://discovery-center.cloud.sap/viewServices" />
+         </HBox>
+	</l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>
